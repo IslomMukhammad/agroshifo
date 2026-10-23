@@ -6,7 +6,7 @@ from aiogram.fsm.state import State, StatesGroup
 
 from config import ADMIN_ID
 from admin.admin_kb import admin_keyboard,cancel_keyboard
-from database.users_db import get_all_users,get_users_count,get_pro_users_count
+from database.users_db import get_all_users,get_users_count
 
 router=Router()
 
@@ -37,12 +37,10 @@ async def cancel_button(callback: types.CallbackQuery, state:FSMContext):
 @router.callback_query(F.data=="statistika", F.from_user.id.in_(ADMIN_ID))
 async def static_handle(callback: types.CallbackQuery):
     total=get_users_count()
-    pro=get_pro_users_count()
 
     text = (
         "📊 <b>Bot statistikasi:</b>\n\n"
         f"👥 <b>Jami obunachilar:</b> {total} ta\n"
-        f"💎 <b>PRO obunachilar:</b> {pro} ta"
     )
     await callback.message.edit_text(text, reply_markup=admin_keyboard)
     await callback.answer()

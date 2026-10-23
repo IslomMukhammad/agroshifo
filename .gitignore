@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual muhitlar
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Loyiha maxfiy ma'lumotlari va lokal baza
+*.db
+*.sqlite3
+users.db
+
+# macOS tizim fayllari
+.DS_Store
+__MACOSX/
+._*
+
+# IDE va muharrirlar sozlamalari
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log va vaqtinchalik fayllar
+*.log
+tmp/
+temp/

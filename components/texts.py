@@ -12,21 +12,6 @@ AI_TEXT="""
 Kasallangan o'simlik rasmini menga yuboring 🍂, men analiz qilib sizga yordam beraman!
 """
 
-PRO_TEXT=f"""
-AgroShifo AI ni yanada ko'proq foydalanish uchun obuna bo'ling! 🌟
-
-<b>Farq:
- - Bepul: Kuniga faqat 1 ta rasmni analiz qilish ⌛️
- - Pro: Oyiga 100 ta rasmni analiz qilish ⏳
-</b>
-
-<b>To'lov qilish:</b>
-<b> - Narx: 18000 so'm</b>
-
-<b>To'lovni amalga oshiring va chekni yuboring! Admin ko'rib chiqib obunani tasdiqlaydi</b>
-
-⚠ Eslatma: Pullaringiz qaytarib berilmaydi! ⚠
-"""
 
 PRIVACY_TEXT="""
 <b>FOYDALANISH SIYOSATI VA SHARTLARI</b>\n\n
